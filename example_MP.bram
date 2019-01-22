@@ -1,0 +1,38 @@
+//Made some changes to cleanup some stuff and to ensure the file is following the xml spec --Ryan
+
+<bram> //the xml spec only allows a single root element so we need to add one
+	<Program>Fitch</Program>
+	<Version>1.0</Version>
+	<metadata></metadata>
+
+	<proof id="0">
+		
+		<assumption linenum="0">
+			<sen>(-> P Q)</sen>
+			<raw>P & Q #and maybe a comment here</raw>
+		</assumption>
+		<assumption linenum="1">
+			<sen>P</sen>
+		</assumption>
+		
+		<goal>
+			<sen>Q</sen>
+		</goal>
+		
+		<step linenum="2">
+			<sen>Q</sen>
+			
+			<premise>0</premise>
+			<premise>1</premise>
+			
+			<rule>MODUS_PONENS</rule>
+		</step>
+		<step linenum="3">
+			<rule>subproof</rule>
+			<premise>1</premise> //references subproof 1
+		</step
+	</proof>
+	<proof id="1">
+		...
+	</proof>
+</bram>
