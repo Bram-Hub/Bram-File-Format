@@ -30,7 +30,7 @@
 		<step linenum="3">
 			<rule>subproof</rule>
 			<premise>1</premise> //references subproof 1
-		</step
+		</step>
 	</proof>
 	<proof id="1">
 		...
