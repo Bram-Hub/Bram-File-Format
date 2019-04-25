@@ -1,14 +1,7 @@
----
-title: 'dotBram - Bram File Format'
----
 
-Project Title
+dotBram - Bram File Format
 ===
 
-
-## Table of Contents
-
-[TOC]
 
 ## What?
 
