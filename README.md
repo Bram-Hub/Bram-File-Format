@@ -14,12 +14,12 @@ A standard file format is needed for Logic software to make the various projects
 ## The Standard
 
 ### Specifications
-`<Program>` : Name of the software that originally created the file.
-`<Version>` : Version of software that created the file
-`<author>` : File Author
-`<created>` : Date file created as ISO 8601 in UTC
-`<modified>` : Date file last modified as ISO 8601 in UTC
-`<hash>` : (Optional) WARNING DEPRECATED. The hash value is recommended to be deprecated in the new version of dotBram due to the complexity of implemenation and the questionable use for an in-file integrity check. It is the sha256sum of the file with <hash>...</hash> removed + the authors_list. 
+`<Program>` : Name of the software that originally created the file. \
+`<Version>` : Version of software that created the file \
+`<author>` : File Author \
+`<created>` : Date file created as ISO 8601 in UTC \
+`<modified>` : Date file last modified as ISO 8601 in UTC \
+`<hash>` : (Optional) WARNING DEPRECATED. The hash value is recommended to be deprecated in the new version of dotBram due to the complexity of implemenation and the questionable use for an in-file integrity check. It is the sha256sum of the file with <hash>...</hash> removed + the authors_list. \
 `<proof id="">` : This is the proof object given a unique positive integer id. Within in the proof object are the following:
 * `<assumption linenum="">` : (Optional) Basic assumption for the proof. `linenum` is a unique global positive integer that serves as the universal identifier for assumptions, steps, goals, etc. in the file. Contains the following items:
     * `<raw>` : Raw user input to be parsed using the [libaris](https://github.com/Bram-Hub/Aris/) parser to produce an in-memory AST.
